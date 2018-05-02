@@ -1,5 +1,5 @@
 # Trabajo-Practico-4
-**1)** Maven: <br />
+1* Maven: <br />
 	**A -** Explique los siguientes goals: <br />
 		**- mvn clean** - Borra todas las clases que fueron compiladas previamente en la carpeta target. <br />
 		**- mvn compile** - Compila/ejecuta el proyecto. <br />
@@ -14,9 +14,9 @@
 		**- import** - Indica la dependencia a reemplazar con la lista de dependencias en la sección <dependencyManagement> del POM especificado. <br /> <br />
 	**C - ¿Qué es un Archetype?** - Es una plantilla que se especifica al crear un proyecto maven. Esta plantilla crea la estructura del proyecto, el contenido del POM, la estructura de carpetas y los ficheros que incluye por defecto. <br /> <br />
 	**D - Defina la estructura base de un proyecto maven.** - La estructura base del proyecto contiene un POM, donde se hace la configuración del proyecto, y una carpeta src, esta a, a la vez, tiene 2 carpetas: main, test (esta carpeta esta porque la incluyo una dependencia de maven). Finalmente dentro de la carpeta main se va a encontrar todas las carpetas de java (clases, intefaces, paquetes, etc). <br /> <br />
-	**E - Diferencia de Archetype y Artifact.** - El archetype es la plantilla que creará toda la carpeta del proyecto dependiendo el tipo que se le indicó, y el artifact en sí es el proyecto (todo lo que integra la carpeta main del proyecto), a este último se le tiene que poner un identificador. <br /> <hr /> <br />
+	**E - Diferencia de Archetype y Artifact.** - El archetype es la plantilla que creará toda la carpeta del proyecto dependiendo el tipo que se le indicó, y el artifact en sí es el proyecto (todo lo que integra la carpeta main del proyecto), a este último se le tiene que poner un identificador. <br /> <hr />
 	
-**2) Spring:** <br />
+2* Spring: <br />
 	**A -** Explique los 4 stereotypes basicos y realice un diagrama de cada uno de ellos . (@Component, @Repository, @Service, @Controller). <br />
 	**- @Component:** Es el estereotipo general y permite anotar un bean para que Spring lo considere uno de sus objetos. <br />
     ![Imagen Diagrama @Component](https://www.arquitecturajava.com/wp-content/uploads/SpringStereotypes.png) <br />
@@ -25,7 +25,7 @@
 	**- @Service:** Este estereotipo se encarga de gestionar las operaciones de negocio más importantes a nivel de la aplicación y aglutina llamadas a varios repositorios de forma simultánea. Su tarea es ser el intermediario del @Controller y del @Repository. <br />
     ![Imagen Diagrama @Service](https://www.arquitecturajava.com/wp-content/uploads/SpringStereotypesService.png) <br />
 	**- @Controller:** El último de los estereotipos que es el que realiza las tareas de controlador y gestión de la comunicación entre el usuario y el aplicativo. Es el encargado de realizar las acciones que realiza el usuario en la aplicación. <br />
-    ![Imagen Diagrama @Controller](https://www.arquitecturajava.com/wp-content/uploads/SpringStereotypesController.png) <br /> <hr /> <br />
+    ![Imagen Diagrama @Controller](https://www.arquitecturajava.com/wp-content/uploads/SpringStereotypesController.png) <br /> <hr /> 
 
-**3) REST:** <br />
+3* REST: <br />
 	A - Explique cada uno de los verbos.
