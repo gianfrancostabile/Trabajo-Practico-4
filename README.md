@@ -29,3 +29,8 @@
 
 * REST: <br />
 	* Explique cada uno de los verbos.
+		* **GET:** Para las consultas y lectura de algun recurso (Tabla).
+		* **POST:** Para la creación de recursos (Agregar un nuevo registro a alguna tabla).
+		* **PUT:** Para editar recursos.
+		* **DELETE:** Para borrar recursos (Borrar registros de la tabla).
+		* **PATCH:** Para editar partes concretas de un recurso.
