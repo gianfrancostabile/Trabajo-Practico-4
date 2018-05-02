@@ -20,7 +20,7 @@ import net.sf.uadetector.UserAgentStringParser;
 import net.sf.uadetector.service.UADetectorServiceFactory;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping(value = "/user", produces = "Application/Json")
 public class UserController {
 
     @Autowired

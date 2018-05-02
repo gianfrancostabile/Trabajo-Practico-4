@@ -14,26 +14,26 @@ public interface UserRepository extends JpaRepository<User, Long>{
 
 	List<User> findAll();
 	
-    @Query(	value = "SELECT * FROM users u WHERE u.date = ?1",
+    @Query(	value = "SELECT * FROM users u WHERE u.date = :date",
     		nativeQuery = true,
     		name = "findByDate")
-    List<User> findByDate(String date);
+    List<User> findByDate(@Param("date")String date);
 
     
-    @Query(	value = "SELECT u.browserName, u.date, COUNT(u) FROM users u WHERE u.date = ?1 GROUP BY u.browserName, u.date ORDER BY COUNT(u) DESC LIMIT 1",
+    @Query(	value = "SELECT u.browser_Name, date, COUNT(*) FROM users u WHERE date = :date GROUP BY u.browser_Name, u.date ORDER BY COUNT(*) DESC LIMIT 1",
     		nativeQuery = true,
     		name = "findByBrowser")
-    List<?> findByBrowser(String date);
+    List<?> findByBrowser(@Param("date")String date);
 
     
-    @Query(	value = "SELECT u.osName, u.date, COUNT(u) FROM users u WHERE u.date = ?1 GROUP BY u.osName, u.date ORDER BY COUNT(u) DESC LIMIT 1",
+    @Query(	value = "SELECT u.os_Name, u.date, COUNT(*) FROM users u WHERE u.date = :date GROUP BY u.os_Name, u.date ORDER BY COUNT(*) DESC LIMIT 1",
     		nativeQuery = true,
     		name = "findByOS")
-    List<?> findByOS(String date);
+    List<?> findByOS(@Param("date")String date);
 
     
-    @Query(	value = "SELECT u.browserName, u.osName, u.date, COUNT(u) FROM users u WHERE u.date = ?1 GROUP BY u.browserName, u.osName, u.date ORDER BY COUNT(u) DESC LIMIT 1",
+    @Query(	value = "SELECT u.browser_Name, u.os_Name, u.date, COUNT(*) FROM users u WHERE u.date = :date GROUP BY u.browser_Name, u.os_Name, u.date ORDER BY COUNT(*) DESC LIMIT 1",
     		nativeQuery = true,
     		name = "findByBrowserOS")
-    List<?> findByBrowserOS(String date);
+    List<?> findByBrowserOS(@Param("date")String date);
 }
