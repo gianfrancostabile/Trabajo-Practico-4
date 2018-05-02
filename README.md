@@ -13,7 +13,7 @@
 		* **system** - Hay que especificar explicitamente donde tiene que buscar la dependencia porque no la va a buscar en el repositorio local de la carpeta .m2. <br />
 		* **import** - Indica la dependencia a reemplazar con la lista de dependencias en la sección <dependencyManagement> del POM especificado. <br /> <br />
 	* **C - ¿Qué es un Archetype?** - Es una plantilla que se especifica al crear un proyecto maven. Esta plantilla crea la estructura del proyecto, el contenido del POM, la estructura de carpetas y los ficheros que incluye por defecto. <br /> <br />
-	**D - Defina la estructura base de un proyecto maven.** - La estructura base del proyecto contiene un POM, donde se hace la configuración del proyecto, y una carpeta src, esta a, a la vez, tiene 2 carpetas: main, test (esta carpeta esta porque la incluyo una dependencia de maven). Finalmente dentro de la carpeta main se va a encontrar todas las carpetas de java (clases, intefaces, paquetes, etc). <br /> <br />
+	* **D - Defina la estructura base de un proyecto maven.** - La estructura base del proyecto contiene un POM, donde se hace la configuración del proyecto, y una carpeta src, esta a, a la vez, tiene 2 carpetas: main, test (esta carpeta esta porque la incluyo una dependencia de maven). Finalmente dentro de la carpeta main se va a encontrar todas las carpetas de java (clases, intefaces, paquetes, etc). <br /> <br />
 	* **E - Diferencia de Archetype y Artifact.** - El archetype es la plantilla que creará toda la carpeta del proyecto dependiendo el tipo que se le indicó, y el artifact en sí es el proyecto (todo lo que integra la carpeta main del proyecto), a este último se le tiene que poner un identificador. <br /> <hr />
 	
 * Spring: <br />
